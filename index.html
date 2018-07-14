@@ -8,22 +8,33 @@
             margin: 0px;
         }
         .header {
-            height: 60px;
+            position: absolute;
+            top: 0;
+            height: 100px;
             z-index: 1;
+            width: 100%;
+        }
+        .center {
+            text-align: center;
         }
         .nav-menu {
+            display: inline;
             overflow: hidden;
         }
 
         .nav-menu ul {
             display: block;
             float: left;
+            width: 54%;
+            margin-left: 75px;
+            color: white;
+            padding-top: 10px;
         }
 
         .nav-menu button {
-            width: 200px;
-            margin-top: 20px;
-            margin-right: 150px;
+            width: 165px;
+            margin-top: 25px;
+            margin-right
             float: right;
             border: none;
             background-color: #f18f01;
@@ -32,8 +43,9 @@
             text-align: center;
             text-decoration: none;
             display: inline-block;
-            font-size: 15px;
             border-radius: 10px;
+            font-size: 16px;
+            font-family:  'Roboto';
         }
 
         .nav-menu button:hover {
@@ -43,8 +55,9 @@
 
         .nav-menu li {
             display: inline-block;
-            padding: 10px;
-            font-size: 18px;
+            padding: 10px 20px;
+            font-size: 17px;
+            font-family:  'Roboto';
         }
 
         li .dropdown {
@@ -67,9 +80,9 @@
             text-align: left;
             margin-left: 1px;
             padding: 12px 16px;
-            background-color: black;
-            color: white;
-            font-size: 15px;
+            background-color: white;
+            color: gray;
+            font-size: 14px;
         }
 
         .menu-dropdown .first {
@@ -88,6 +101,18 @@
             height: auto;
             z-index: -1;
         }
+        .page-quote {
+            position: absolute;
+            top: 300px;
+            width: 100%;
+            text-align: center;
+            font-family: 'Lato','Verdana','Helvetica', sans-serif;
+            color: white;
+        }
+        .page-quote h1 {
+            font-size: 40px;
+        }
+
     </style>
   </head>
   <body>
@@ -96,9 +121,7 @@
       </div>
 
       <div class="header">
-
           <div class="nav-menu">
-
               <ul>
                 <li class="dropdown">Programs
                     <div class="menu-dropdown">
@@ -129,8 +152,12 @@
               </ul>
 
               <button type="button" name="btn-daftar sekarang">Daftar Sekarang</button>
-
           </div>
+      </div>
+
+      <div class="page-quote">
+          <h1>Menjadi Full Stack Web Developer dalam 12 minggu</h1>
+          <h2>Kelas Pemrograman Full Stack JavaScript Web Developer di Jakarta, Indonesia</h2>
       </div>
 
   </body>
