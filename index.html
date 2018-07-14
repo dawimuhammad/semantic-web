@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hacktiv7 Alpha Version</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+        .header {
+            height: 60px;
+            z-index: 1;
+        }
+        .nav-menu {
+            overflow: hidden;
+        }
+
+        .nav-menu ul {
+            display: block;
+            float: left;
+        }
+
+        .nav-menu button {
+            width: 200px;
+            margin-top: 20px;
+            margin-right: 150px;
+            float: right;
+            border: none;
+            background-color: #f18f01;
+            color: white;
+            padding: 13px 11px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            border-radius: 10px;
+        }
+
+        .nav-menu button:hover {
+            background-color: #F4AD46;
+            color: white;
+        }
+
+        .nav-menu li {
+            display: inline-block;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        li .dropdown {
+            display: inline-block;
+            border-radius: 10px;
+        }
+        .dropdown:hover .menu-dropdown {
+            display: block;
+        }
+        .menu-dropdown {
+            margin-top: 10px;
+            display: none;
+            position: absolute;
+            min-width: 160px;
+            z-index: 1;
+        }
+        .menu-dropdown a {
+            display: block;
+            text-decoration: none;
+            text-align: left;
+            margin-left: 1px;
+            padding: 12px 16px;
+            background-color: black;
+            color: white;
+            font-size: 15px;
+        }
+
+        .menu-dropdown .first {
+           border-radius: 5px 5px 0px 0px;
+        }
+
+        .menu-dropdown .last {
+           border-radius: 0px 0px 5px 5px;
+        }
+
+        .btn-daftar {
+            display: inline-block;
+        }
+        .top-image img {
+            max-width: 100%;
+            height: auto;
+            z-index: -1;
+        }
+    </style>
+  </head>
+  <body>
+      <div class="top-image">
+          <img src="https://images.unsplash.com/photo-1437419764061-2473afe69fc2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=da8cb196ab6108a62dc9f435ae305db2&auto=format&fit=crop&w=2690&q=80">
+      </div>
+
+      <div class="header">
+
+          <div class="nav-menu">
+
+              <ul>
+                <li class="dropdown">Programs
+                    <div class="menu-dropdown">
+                        <a class="first" href="#">On Campus Immersive</a>
+                        <a href="#">Remote Immersive</a>
+                        <a href="#">Intro to Programming</a>
+                        <a href="#">Front End Basics</a>
+                        <a href="#">Agile Scrum</a>
+                        <a class="last" href="#">React and React Native</a>
+                    </div>
+                </li>
+                <li class="dropdown">Students
+                    <div class="menu-dropdown">
+                        <a class="first" href="#">Outcomes Report</a>
+                        <a href="#">Testimonials</a>
+                        <a href="#">Student Projects</a>
+                        <a class="last" href="#">Beasiswa</a>
+                    </div>
+                </li>
+                <li class="dropdown">Company
+                    <div class="menu-dropdown">
+                        <a class="first" href="#">Our Teams</a>
+                        <a href="#">Hacktiv8 Blog</a>
+                        <a href="#">Press Kit</a>
+                        <a class="last" href="#">Jobs</a>
+                    </div>
+                </li>
+              </ul>
+
+              <button type="button" name="btn-daftar sekarang">Daftar Sekarang</button>
+
+          </div>
+      </div>
+
+  </body>
+</html>
