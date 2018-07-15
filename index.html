@@ -113,24 +113,66 @@
         .page-quote h1 {
             font-size: 40px;
         }
-        .container-media {
+        .container-flex {
             display: flex;
             justify-content: center;
-            height: 60px;
         }
-        .container-media div {
+        .container-flex .media {
             width: 175px;
             margin: 10px 15px;
             text-align: center;
+            padding-top: 15px;
         }
-        .container-media img {
+        .h-17 {
+            height: 17%;
+        }
+        .h-50 {
+            height: 50%;
+        }
+
+        .container-flex .programs {
+            padding: 25px;
+            width: 350px;
+            text-align: center;
+        }
+
+        .programs ul {
+            display: block;
+            list-style: none;
+            padding: 15px;
+            border: 1px solid grey;
+            border-radius: 5px;
+            height: 350px;
+        }
+
+        .container-flex .silabus-content {
+            width: 500px;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .silabus-content ul {
+            display: block;
+            list-style: none;
+            padding: 20px;
+            border: 1px solid grey;
+            border-radius: 5px;
+        }
+
+        .silabus-content img {
+            width: 500px;
+        }
+
+        .media img {
             width: 175px;
         }
+
         .footer {
+            display: flex;
+            justify-content: center;
             padding: 30px 100px;
             background-color: black;
             color: white;
-            width: 100%;
             height: 250px;
             font-size: 14px;
         }
@@ -143,7 +185,7 @@
         .col {
             float: left;
             padding: 20px 0px;
-            width: 225px;
+            width: 200px;
         }
         .col h4 {
             margin-left: 7px;
@@ -156,6 +198,10 @@
             float: left;
             width: 100%;
             padding: 5px 0px;
+        }
+        .silabus {
+            height: 500px;
+            background-color: #F4F5F5;
         }
     </style>
   </head>
@@ -204,19 +250,80 @@
           <h2>Kelas Pemrograman Full Stack JavaScript Web Developer di Jakarta, Indonesia</h2>
       </div>
 
-      <div class="container-media">
-          <div>
+      <div class="container-flex">
+          <div class="media">
               <img src="https://id.techinasia.com/assets/1edc904cfe7c965859a475f15430145b.svg" alt="Tech in Asia">
           </div>
-          <div>
+          <div class="media">
               <img src="https://www.codepolitan.com/assets/img/codepolitan_logo.png" alt="">
           </div>
-          <div>
+          <div class="media">
               <img src="https://hacktiv8.com/img/press-dailysocial--md5--db026bcf01e3b1cc8fb167a0477c9632.png" alt="">
           </div>
-          <div>
+          <div class="media">
               <img src="https://hacktiv8.com/img/press-jakartaglobe--md5--10c653be18793d83cf41af40ef36dfcc.png" alt="">
           </div>
+      </div>
+
+      <div class="container-flex silabus">
+          <div class="silabus-content">
+              <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=07bcd69444b1da123c309e5f4485371b&auto=format&fit=crop&w=1950&q=80" alt="">
+          </div>
+          <div class="silabus-content">
+              <ul>
+                <li class="h-17">
+                  <h2>HACKTIV8 Coding Bootcamp</h2>
+                </li>
+                <li class="h-50">
+                  <p style=" padding-left:5px; text-align: left">HACKTIV8 adalah program pembelajaran Full Stack JavaScript immersive pertama di Indonesia. Kurikulum kami dirancang untuk membangun keahlian yang dapat diaplikasikan pada perkembangan dunia teknologi terkini.</p>
+                </li>
+                <li style="height: 40px; border-radius: 10px; background-color: #f18f01">
+                  <h4>Lihat Silabus Hacktiv7</h4>
+                </li>
+              </ul>
+          </div>
+      </div>
+
+      <div class="container-flex">
+        <div class="programs">
+            <ul>
+              <li class="h-17">
+                <h3>Full Stack JavaScript Immersive </h3>
+              </li>
+              <li class="h-50">
+                <p style=" padding-left:5px; text-align: left">Kelas pengembangan web menggunakan JavaScript yang intensif selama 12 minggu di Jakarta. Kamu akan mampu membuat aplikasi web ataupun mobile, termasuk bagaimana menghubungkannya dengan database, dan API, TDD, hingga melakukan deployment dan scaling terhadap aplikasi kamu.</p>
+              </li>
+              <li style="height: 40px; border-radius: 10px; background-color: #f18f01">
+                <h4>Pelajari Lebih Lanjut</h4>
+              </li>
+            </ul>
+        </div>
+        <div class="programs">
+            <ul>
+              <li class="h-17">
+                <h3>Front End Web Development Basic</h3>
+              </li>
+              <li class="h-50">
+                <p style=" padding-left:5px; text-align: left">Kelas pembelajaran Basic Front End Wed Development menggunakan HTML, CSS, dan Java Script secara part-time di Jakarta. Program ini akan mengajak peserta untuk membuat berbagai proyek yang dapat menjadi portofolio pribadi sebagai Front-End Web Developer.</p>
+              </li>
+              <li style="height: 40px; border-radius: 10px; background-color: #f18f01">
+                <h4>Pelajari Lebih Lanjut</h4>
+              </li>
+            </ul>
+        </div>
+        <div class="programs">
+            <ul>
+              <li class="h-17">
+                <h3>Agile SCRUM Class in Partnership with AgileView</h3>
+              </li>
+              <li class="h-50">
+                <p style=" padding-left:5px; text-align: left">Kamu akan belajar mengenai Agile Concepts, Kanban High Level, SCRUM Details, SCRUM development thinking, knowledge areas, dan teamwork. Program ini akan memberikan kamu pemahaman mendalam akan bagaimana mempraktikkan framework paling populer sekelas Kanban dan SCRUM.</p>
+              </li>
+              <li style="height: 40px; border-radius: 10px; background-color: #f18f01">
+                <h4>Pelajari Lebih Lanjut</h4>
+              </li>
+            </ul>
+        </div>
       </div>
 
       <div class="footer">
